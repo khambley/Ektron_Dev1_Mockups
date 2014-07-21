@@ -1,0 +1,531 @@
+
+<html>
+<head runat="server">
+        <link rel="Stylesheet" type="text/css" href="/Source/css/com.css" />
+
+    <!--[if IE 9]>
+        <link rel="Stylesheet" type="text/css" href="/Source/css/ie9.css" />
+    <![endif]-->
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <script src="//css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+        <link rel="Stylesheet" type="text/css" href="/Source/css/ie.css" />
+        <script type="text/javascript">
+            $(document).ready(function(){
+                setTimeout('Ektron.Com.Functions.SwapImageForAltText(".ektron-btn-convert-1 a img")', 1000);
+                setTimeout('Ektron.Com.Functions.SwapImageForAltText(".ektron-btn-convert-2 a img")', 1000);
+                setTimeout('Ektron.Com.Functions.SetCTAImageDimensions(".hs-cta-wrapper .hs-cta-node a img")', 1000);
+            });
+        </script>
+    <![endif]-->
+    <!--[if IE 7]>
+        <link rel="Stylesheet" type="text/css" href="/Source/css/ie7.css" />
+    <![endif]-->
+    <title></title>
+</head>
+<body>
+    
+    <div id="pagewrapper">
+        <!-- Header Area -->
+        <div class="ektron-header">
+            <div class="ektron-header-utility ektron-black-texture">
+                <div class="container">
+                    <a class="brand offset1" href="/Home" title="Ektron Home" />
+                    <figure class="ektron-logo-figure" data-media="/images/content/logo/logoSmall.jpg"
+                        data-media768="/images/content/logo/logo.png">
+                            <noscript>
+                                <img id="uxLogoImage" src="/images/content/logo/logo.png" alt="Ektron, Inc."/>
+                            </noscript>
+                            <img src="/images/Content/logo/logo.png" alt="Ektron, Inc." />
+                        </figure>
+                    </a>
+                     <div class="pull-right hidden-phone">
+                        <asp:TextBox ID="txtSearch" runat="server" CssClass="span3 ektron-rounded-input ektron-search-input" />
+                        <asp:ImageButton runat="server" ID="btnSearch" CssClass="ektron-inset-btn" 
+                            ImageUrl="/images/Magnifier.png" onclick="btnSearch_Click" />
+                    </div>
+                    <div class="hidden-phone">
+                        <div class="ektron-utility-nav">
+                            <div class="ektron-utility-link">
+                                <a href="/login/">Login</a>
+                            </div>
+                            <div class="ektron-utility-link">
+                                <input type="image" name="ctl00$Lang1$btnLangUk" id="ctl00_Lang1_btnLangUk" src="/images/UKflag.png" />
+                            </div>
+                            <div class="ektron-utility-link">
+                                <input type="image" name="ctl00$Lang1$btnLangFr" id="ctl00_Lang1_btnLangFr" src="/images/FRflag.png" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ektron-menu-toggle visible-phone pull-right">
+                        <a href="#">
+                            <img src="/images/menu-button-closed.png" alt="Menu" /></a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Navigation -->
+            <div class="ektron-header-navigation">
+                <div class="ektron-navigation-container">
+                    <div class="nav-collapse ektron-nav-collapse container">
+                        <div class=" ektron-navigation-search visible-phone">
+                            <input name="ctl00$txtSearchPhone" type="text" id="ctl00_txtSearchPhone" class="span3 ektron-rounded-input ektron-search-input" />
+                            <input type="submit" name="ctl00$btnSearchPhone" value="" id="ctl00_btnSearchPhone"
+                                class="ektron-inset-btn" />
+                        </div>
+                        <style type="text/css">
+                            li.hideme
+                            {
+                                display: none;
+                            }
+                        </style>
+                        <ul id="ctl00_Menu1_UxMasterMenuView_menunav">
+                            <li class=''><a id="ctl00_Menu1_UxMasterMenuView_nodeLink_0" itemselected="True"
+                                href="/">Destinations</a>
+                                <div class="ektron-dropdown-menu">
+                                    <div class="row ektron-large-vertical-padding ektron-460-no-padding">
+                                        <div class="span3 visible-desktop">
+                                            <div class="ektron-padding-medium">
+                                            </div>
+                                        </div>
+                                        <div class="span5 ektron-724-span8 ektron-460-full">
+                                            <div class="ektron-med-vertical-padding ektron-menu-middle ektron-large-left-margin ektron-460-no-padding">
+                                                <div class="ektron-menu-middle-heading">
+                                                    Destinations</div>
+                                                <ul id="ctl00_Menu1_UxMasterMenuView_Tree_View_Base1_0_menunav_0">
+                                                    <li class=''><a id="ctl00_Menu1_UxMasterMenuView_Tree_View_Base1_0_nodeLink_0" itemselected="False"
+                                                        href="/Attractions/">Attractions</a>
+                                                        <ul id="ctl00_Menu1_UxMasterMenuView_Tree_View_Base1_0_Tree_View_Base1_0_menunav_0">
+                                                            <li class='hideme'><a id="ctl00_Menu1_UxMasterMenuView_Tree_View_Base1_0_Tree_View_Base1_0_nodeLink_0"
+                                                                itemselected="False" href="/USA-Attractions/">USA Attractions</a> </li>
+                                                            <li class='hideme'><a id="ctl00_Menu1_UxMasterMenuView_Tree_View_Base1_0_Tree_View_Base1_0_nodeLink_0"
+                                                                itemselected="False" href="/UK-Attractions/">UK Attractions</a> </li>
+                                                            <li class='hideme'><a id="ctl00_Menu1_UxMasterMenuView_Tree_View_Base1_0_Tree_View_Base1_0_nodeLink_0"
+                                                                itemselected="False" href="/Australian-Attractions/">Australian Attractions</a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class=''><a id="ctl00_Menu1_UxMasterMenuView_Tree_View_Base1_0_nodeLink_0" itemselected="False"
+                                                        href="/SightseeingTours/">Sightseeing &amp; Tours</a>
+                                                        <ul id="ctl00_Menu1_UxMasterMenuView_Tree_View_Base1_0_Tree_View_Base2_0_menunav_0">
+                                                            <li class='hideme'><a id="ctl00_Menu1_UxMasterMenuView_Tree_View_Base1_0_Tree_View_Base2_0_nodeLink_0"
+                                                                itemselected="False" href="/USATours/">USA Tours</a> </li>
+                                                            <li class='hideme'><a id="ctl00_Menu1_UxMasterMenuView_Tree_View_Base1_0_Tree_View_Base2_0_nodeLink_0"
+                                                                itemselected="False" href="/UKTours/">UK Tours</a> </li>
+                                                            <li class='hideme'><a id="ctl00_Menu1_UxMasterMenuView_Tree_View_Base1_0_Tree_View_Base2_0_nodeLink_0"
+                                                                itemselected="False" href="/AustralianTours/">Australian Tours</a> </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class=''><a id="ctl00_Menu1_UxMasterMenuView_Tree_View_Base1_0_nodeLink_0" itemselected="False"
+                                                        href="/Factsheets/">Factsheets</a> </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class=''><a id="ctl00_Menu1_UxMasterMenuView_nodeLink_0" itemselected="True"
+                                href="/">City Breaks</a>
+                                <div class="ektron-dropdown-menu">
+                                    <div class="row ektron-large-vertical-padding ektron-460-no-padding">
+                                        <div class="span3 visible-desktop">
+                                            <div class="ektron-padding-medium">
+                                            </div>
+                                        </div>
+                                        <div class="span5 ektron-724-span8 ektron-460-full">
+                                            <div class="ektron-med-vertical-padding ektron-menu-middle ektron-large-left-margin ektron-460-no-padding">
+                                                <div class="ektron-menu-middle-heading">
+                                                    City Breaks</div>
+                                                <ul id="ctl00_Menu1_UxMasterMenuView_Tree_View_Base2_0_menunav_0">
+                                                    <li class=''><a id="ctl00_Menu1_UxMasterMenuView_Tree_View_Base2_0_nodeLink_0" itemselected="False"
+                                                        href="/CityBreakLocations.aspx">City Break Hotels</a> </li>
+                                                    <li class=''><a id="ctl00_Menu1_UxMasterMenuView_Tree_View_Base2_0_nodeLink_0" itemselected="False"
+                                                        href="/TopCitiesDestinations.aspx?pageid=68">Top Cities and Destinations</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class=''><a id="ctl00_Menu1_UxMasterMenuView_nodeLink_0" itemselected="True"
+                                href="/">Hot Deals</a>
+                                <div class="ektron-dropdown-menu">
+                                    <div class="row ektron-large-vertical-padding ektron-460-no-padding">
+                                        <div class="span3 visible-desktop">
+                                            <div class="ektron-padding-medium">
+                                            </div>
+                                        </div>
+                                        <div class="span5 ektron-724-span8 ektron-460-full">
+                                            <div class="ektron-med-vertical-padding ektron-menu-middle ektron-large-left-margin ektron-460-no-padding">
+                                                <div class="ektron-menu-middle-heading">
+                                                    Hot Deals</div>
+                                                <ul id="ctl00_Menu1_UxMasterMenuView_Tree_View_Base3_0_menunav_0">
+                                                    <li class=''><a id="ctl00_Menu1_UxMasterMenuView_Tree_View_Base3_0_nodeLink_0" itemselected="False"
+                                                        href="/GetawayDeals/">Last Minute Getaway deals</a> </li>
+                                                    <li class=''><a id="ctl00_Menu1_UxMasterMenuView_Tree_View_Base3_0_nodeLink_0" itemselected="False"
+                                                        href="/win-an-ipad.aspx">Win Stuff</a> </li>
+                                                    <li class=''><a id="ctl00_Menu1_UxMasterMenuView_Tree_View_Base3_0_nodeLink_0" itemselected="False"
+                                                        href="/Notifications.aspx">Register for hot deal Notifications</a> </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class=''><a id="ctl00_Menu1_UxMasterMenuView_nodeLink_0" itemselected="True"
+                                href="/">Register</a>
+                                <div class="ektron-dropdown-menu">
+                                    <div class="row ektron-large-vertical-padding ektron-460-no-padding">
+                                        <div class="span3 visible-desktop">
+                                            <div class="ektron-padding-medium">
+                                            </div>
+                                        </div>
+                                        <div class="span5 ektron-724-span8 ektron-460-full">
+                                            <div class="ektron-med-vertical-padding ektron-menu-middle ektron-large-left-margin ektron-460-no-padding">
+                                                <div class="ektron-menu-middle-heading">
+                                                    Register</div>
+                                                <ul id="ctl00_Menu1_UxMasterMenuView_Tree_View_Base4_0_menunav_0">
+                                                    <li class=''><a id="ctl00_Menu1_UxMasterMenuView_Tree_View_Base4_0_nodeLink_0" itemselected="False"
+                                                        href="/register/">Create A Trek-On Travel Account</a> </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class=''><a id="ctl00_Menu1_UxMasterMenuView_nodeLink_0" itemselected="True"
+                                href="/">About Trek-on</a>
+                                <div class="ektron-dropdown-menu">
+                                    <div class="row ektron-large-vertical-padding ektron-460-no-padding">
+                                        <div class="span3 visible-desktop">
+                                            <div class="ektron-padding-medium">
+                                            </div>
+                                        </div>
+                                        <div class="span5 ektron-724-span8 ektron-460-full">
+                                            <div class="ektron-med-vertical-padding ektron-menu-middle ektron-large-left-margin ektron-460-no-padding">
+                                                <div class="ektron-menu-middle-heading">
+                                                    About Trek-on</div>
+                                                <ul id="ctl00_Menu1_UxMasterMenuView_Tree_View_Base5_0_menunav_0">
+                                                    <li class=''><a id="ctl00_Menu1_UxMasterMenuView_Tree_View_Base5_0_nodeLink_0" itemselected="False"
+                                                        href="/News/">News</a>
+                                                        <ul id="ctl00_Menu1_UxMasterMenuView_Tree_View_Base5_0_Tree_View_Base1_0_menunav_0">
+                                                            <li class='hideme'><a id="ctl00_Menu1_UxMasterMenuView_Tree_View_Base5_0_Tree_View_Base1_0_nodeLink_0"
+                                                                itemselected="False" href="/news-archive/">Archive</a> </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class=''><a id="ctl00_Menu1_UxMasterMenuView_Tree_View_Base5_0_nodeLink_0" itemselected="False"
+                                                        href="/Contact/">Contact</a> </li>
+                                                    <li class=''><a id="ctl00_Menu1_UxMasterMenuView_Tree_View_Base5_0_nodeLink_0" itemselected="False"
+                                                        href="/AboutUs/">About Us</a> </li>
+                                                    <li class=''><a id="ctl00_Menu1_UxMasterMenuView_Tree_View_Base5_0_nodeLink_0" itemselected="False"
+                                                        href="/Team.aspx">Team</a> </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div id="ctl00_uxNavigation_uxNavigation_Utility1_uxUtilityNavWrapper" class="ektron-utility-invert visible-phone">
+                            <div class="ektron-utility-nav">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Navigation End -->
+        </div>
+        <!-- Header Area End -->
+        <script id="EktronScriptBlockglrpsmenu" type="text/javascript">
+            // adding jquery styles to menu user control
+            Ektron.ready(function (event, eventName) {
+                $(".ektron-navigation-container").find("ul").first().addClass("ektron-nav pull-right");
+                $(".ektron-navigation-container").find("ul").first().children("li").addClass("ektron-navigation-dropdown");
+                $(".ektron-navigation-container").find("ul").first().children("li").children("a").addClass("ektron-dropdown-toggle");
+                Ektron.Com.Navigation.init();
+            });
+        </script>
+        <!-- Start Carousel -->
+        <script type="text/javascript">
+            Ektron.ready(function (event, eventName) {
+                Ektron.PFWidgets.EktronMobileSlider.init({ ContainerID: 'divswipecontainer', SwipeID: 'swipeux', GalleryEnabled: true, InitColorLeft: 'ffffff', InitColorRight: 'ffffff' });
+            });
+        </script>
+        <div class="container">
+            <div class="row">
+                <div class="span12">
+                    <div class="content">
+                        <div id="divswipecontainer" class="ektron-swipe-container">
+                            <div class="ektron-slide-thumbnail-list">
+                                <a href="#" class="ektron-slide-thumbnail" data-left="ffffff" data-right="ffffff">
+                                    <img src="/uploadedImages/TrainingSite/TrainingSiteContent/Home/Carousel/Icons/Londonthumb.png?n=3900"
+                                        alt="" />
+                                </a><a href="#" class="ektron-slide-thumbnail" data-left="ffffff" data-right="ffffff">
+                                    <img src="/uploadedImages/TrainingSite/TrainingSiteContent/Home/Carousel/Icons/Bostonthumb.png?n=5377"
+                                        alt="" />
+                                </a><a href="#" class="ektron-slide-thumbnail" data-left="ffffff" data-right="ffffff">
+                                    <img src="/uploadedImages/TrainingSite/TrainingSiteContent/Home/Carousel/Icons/Sydneythumb.png?n=480"
+                                        alt="" />
+                                </a>
+                            </div>
+                            <div class="swipe ektron-swipe-slider" style="visibility: visible" id="swipeux">
+                                <div class="swipe-wrap" style="width: 7020px">
+                                    <div class="ektron-swipe-item" style="width: 1170px; display: block">
+                                        <figure class="ektron-slider-figure" data-media1200="/uploadedImages/TrainingSite/TrainingSiteContent/Home/Carousel/LargeImages/London_Street.jpg?n=928"
+                                            data-media="/uploadedImages/TrainingSite/TrainingSiteContent/Home/Carousel/LargeImages/London_Street.jpg?n=928"
+                                            data-media980="/uploadedImages/TrainingSite/TrainingSiteContent/Home/Carousel/920/london-street-940.jpg?n=566"
+                                            data-media768="/uploadedImages/TrainingSite/TrainingSiteContent/Home/Carousel/724/london-street-724.jpg?n=3629">
+				<a href="http://localhost/london"></a>
+            </figure>
+                                        <div class="ektron-alternate-view" data-color="#ffffff" style="color: #000000;">
+                                            <div class="ektron-alternate-image">
+                                                <img src="/uploadedImages/TrainingSite/TrainingSiteContent/Home/Carousel/SmallImages/london-street-small.jpg?n=7262" /></div>
+                                            <div class="ektron-alternate-link">
+                                                <a href="http://localhost/london" target="_self" style="color: #000000;"></a>
+                                            </div>
+                                            <div class="ektron-alternate-text">
+                                                <span class='ektron-alternate-quote' style='color: #000000'></span>View Trek-On
+                                                Travel's Recommended Attractions<span class='ektron-alternate-quote' style='color: #000000'></span></div>
+                                        </div>
+                                    </div>
+                                    <div class="ektron-swipe-item" style="width: 1170px; display: block">
+                                        <figure class="ektron-slider-figure" data-media1200="/uploadedImages/TrainingSite/TrainingSiteContent/Home/Carousel/LargeImages/Boston_map.jpg?n=546"
+                                            data-media="/uploadedImages/TrainingSite/TrainingSiteContent/Home/Carousel/LargeImages/Boston_map.jpg?n=546"
+                                            data-media980="/uploadedImages/TrainingSite/TrainingSiteContent/Home/Carousel/920/boston-map-940.jpg?n=901"
+                                            data-media768="/uploadedImages/TrainingSite/TrainingSiteContent/Home/Carousel/724/Boston-map-724.jpg?n=5624">
+				<a href="http://localhost/boston"></a>
+            </figure>
+                                        <div class="ektron-alternate-view" data-color="#ffffff" style="color: #000000;">
+                                            <div class="ektron-alternate-image">
+                                                <img src="/uploadedImages/TrainingSite/TrainingSiteContent/Home/Carousel/SmallImages/boston-map-small.jpg?n=1148" /></div>
+                                            <div class="ektron-alternate-link">
+                                                <a href="http://localhost/boston" target="_self" style="color: #000000;"></a>
+                                            </div>
+                                            <div class="ektron-alternate-text">
+                                                <span class='ektron-alternate-quote' style='color: #000000'></span>View Trek-On
+                                                Travel's Recommended Attractions<span class='ektron-alternate-quote' style='color: #000000'></span></div>
+                                        </div>
+                                    </div>
+                                    <div class="ektron-swipe-item" style="width: 1170px; display: block">
+                                        <figure class="ektron-slider-figure" data-media1200="/uploadedImages/TrainingSite/TrainingSiteContent/Home/Carousel/LargeImages/global_sydney.gif?n=8457"
+                                            data-media="/uploadedImages/TrainingSite/TrainingSiteContent/Home/Carousel/LargeImages/global_sydney.gif?n=8457"
+                                            data-media980="/uploadedImages/TrainingSite/TrainingSiteContent/Home/Carousel/920/global-sydney-940.jpg?n=6431"
+                                            data-media768="/uploadedImages/TrainingSite/TrainingSiteContent/Home/Carousel/724/global-sydney-724.jpg?n=5168">
+				<a href="http://localhost/sydney"></a>
+            </figure>
+                                        <div class="ektron-alternate-view" data-color="#ffffff" style="color: #000000;">
+                                            <div class="ektron-alternate-image">
+                                                <img src="/uploadedImages/TrainingSite/TrainingSiteContent/Home/Carousel/SmallImages/global-sydney-small.jpg?n=7327" /></div>
+                                            <div class="ektron-alternate-link">
+                                                <a href="http://localhost/sydney" target="_self" style="color: #000000;"></a>
+                                            </div>
+                                            <div class="ektron-alternate-text">
+                                                <span class='ektron-alternate-quote' style='color: #000000'></span>View Trek-On
+                                                Travel's Recommended Attractions<span class='ektron-alternate-quote' style='color: #000000'></span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Carousel -->
+        <!-- Start Content Area -->
+        <div class="ektron-grey-gradient-vertical-offset ektron-inner-shadow-bottom">
+            <div class="container ektron-med-vertical-padding">
+                <div class="row">
+                    <div class="span6 ektron-med-vertical-margin ektron-460-half">
+                        <div id="ctl00_ContentPlaceHolder1_dzRequestCall_updatepanel">
+                            <div id="ctl00_ContentPlaceHolder1_dzRequestCall_dzcontainer" class="dropzone PBClear">
+                                <div id="ctl00_ContentPlaceHolder1_dzRequestCall_columnDisplay_ctl00_zone" class="PBViewing"
+                                    style="width: 100%;">
+                                    <ul id="ctl00_ContentPlaceHolder1_dzRequestCall_columnDisplay_ctl00_column" class="columnwidgetlist">
+                                        <li class="PBItem">
+                                            <div id="ctl00_ContentPlaceHolder1_dzRequestCall_columnDisplay_ctl00_controlcolumn_ctl00_WidgetHost_dropcontainer"
+                                                class="widget">
+                                                <span id="ctl00_ContentPlaceHolder1_dzRequestCall_columnDisplay_ctl00_controlcolumn_ctl00_WidgetHost_lblErrorMessage">
+                                                </span>
+                                                <div id="ctl00_ContentPlaceHolder1_dzRequestCall_columnDisplay_ctl00_controlcolumn_ctl00_WidgetHost_updatepanel">
+                                                    <div id="ctl00_ContentPlaceHolder1_dzRequestCall_columnDisplay_ctl00_controlcolumn_ctl00_WidgetHost_dvContent"
+                                                        class="content">
+                                                        <div id="ctl00_ContentPlaceHolder1_dzRequestCall_columnDisplay_ctl00_controlcolumn_ctl00_WidgetHost_WidgetHost_widget_CB">
+                                                            <div class="ektron-btn-convert-1">
+                                                                <a href="#">Request a Call</a>
+                                                            </div>
+                                                        </div>
+                                                        <span id="ctl00_ContentPlaceHolder1_dzRequestCall_columnDisplay_ctl00_controlcolumn_ctl00_WidgetHost_WidgetHost_widget_errorLb">
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="span6 ektron-med-vertical-margin ektron-460-half">
+                        <div id="ctl00_ContentPlaceHolder1_dzHotDeals_updatepanel">
+                            <div id="ctl00_ContentPlaceHolder1_dzHotDeals_dzcontainer" class="dropzone PBClear">
+                                <div id="ctl00_ContentPlaceHolder1_dzHotDeals_columnDisplay_ctl00_zone" class="PBViewing"
+                                    style="width: 100%;">
+                                    <ul id="ctl00_ContentPlaceHolder1_dzHotDeals_columnDisplay_ctl00_column" class="columnwidgetlist">
+                                        <li class="PBItem">
+                                            <div id="ctl00_ContentPlaceHolder1_dzHotDeals_columnDisplay_ctl00_controlcolumn_ctl00_WidgetHost_dropcontainer"
+                                                class="widget">
+                                                <span id="ctl00_ContentPlaceHolder1_dzHotDeals_columnDisplay_ctl00_controlcolumn_ctl00_WidgetHost_lblErrorMessage">
+                                                </span>
+                                                <div id="ctl00_ContentPlaceHolder1_dzHotDeals_columnDisplay_ctl00_controlcolumn_ctl00_WidgetHost_updatepanel">
+                                                    <div id="ctl00_ContentPlaceHolder1_dzHotDeals_columnDisplay_ctl00_controlcolumn_ctl00_WidgetHost_dvContent"
+                                                        class="content">
+                                                        <div id="ctl00_ContentPlaceHolder1_dzHotDeals_columnDisplay_ctl00_controlcolumn_ctl00_WidgetHost_WidgetHost_widget_CB">
+                                                            <div class="ektron-btn-convert-2">
+                                                                <a href="#">Hot Deals</a>
+                                                            </div>
+                                                        </div>
+                                                        <span id="ctl00_ContentPlaceHolder1_dzHotDeals_columnDisplay_ctl00_controlcolumn_ctl00_WidgetHost_WidgetHost_widget_errorLb">
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container ektron-large-vertical-padding ektron-mega-bottom-padding hidden-phone">
+                <div class="row">
+                    <div class="span8 ektron-content">
+                        <div class="ektron-large-bottom-margin">
+                            <div id="ctl00_ContentPlaceHolder1_DropZone1_updatepanel">
+                                <div id="ctl00_ContentPlaceHolder1_DropZone1_dzcontainer" class="dropzone PBClear">
+                                    <div id="ctl00_ContentPlaceHolder1_DropZone1_columnDisplay_ctl00_zone" class="PBViewing">
+                                        <ul id="ctl00_ContentPlaceHolder1_DropZone1_columnDisplay_ctl00_column" class="columnwidgetlist">
+                                            <li class="PBItem">
+                                                <div id="ctl00_ContentPlaceHolder1_DropZone1_columnDisplay_ctl00_controlcolumn_ctl00_WidgetHost_dropcontainer"
+                                                    class="widget">
+                                                    <span id="ctl00_ContentPlaceHolder1_DropZone1_columnDisplay_ctl00_controlcolumn_ctl00_WidgetHost_lblErrorMessage">
+                                                    </span>
+                                                    <div id="ctl00_ContentPlaceHolder1_DropZone1_columnDisplay_ctl00_controlcolumn_ctl00_WidgetHost_updatepanel">
+                                                        <div id="ctl00_ContentPlaceHolder1_DropZone1_columnDisplay_ctl00_controlcolumn_ctl00_WidgetHost_dvContent"
+                                                            class="content">
+                                                            <div id="ctl00_ContentPlaceHolder1_DropZone1_columnDisplay_ctl00_controlcolumn_ctl00_WidgetHost_WidgetHost_widget_CB">
+                                                                <h1>
+                                                                    WELCOME TO TREK-ON TRAVEL</h1>
+                                                                <p>
+                                                                    Whether you know exactly what trip you want, need ideas, or want help narrowing
+                                                                    down your search, Trek-on Travel makes it easy to find the holiday that is right
+                                                                    for you. Trek-on Travel is a service created to address the needs of today's traveller.
+                                                                    We offer access to numerous airlines, hotels and car rental locations worldwide.
+                                                                    We also provide in depth destination guides and maps, holiday insurance, and a comprehensive
+                                                                    travel information service with a free online newsletter.&#160;</p>
+                                                                <p>
+                                                                    Founded in 2013, Trek-on Travel has become one of the main hotel search and information
+                                                                    websites. Every month, numerous users trust Trek-on Travel as their starting point
+                                                                    for travel research. Trek-on Travel helps users find their ideal flight or hotel
+                                                                    and book it for the lowest possible rate by comparing prices from more than 100
+                                                                    booking sites. We want to give you the best travel experience you can get for your
+                                                                    money.</p>
+                                                            </div>
+                                                            <span id="ctl00_ContentPlaceHolder1_DropZone1_columnDisplay_ctl00_controlcolumn_ctl00_WidgetHost_WidgetHost_widget_errorLb">
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="span4 ektron-auto-medium-vertical-padding">
+                        <div id="ctl00_ContentPlaceHolder1_dzRight_updatepanel">
+                            <div id="ctl00_ContentPlaceHolder1_dzRight_dzcontainer" class="dropzone PBClear">
+                                <div id="ctl00_ContentPlaceHolder1_dzRight_columnDisplay_ctl00_zone" class="PBViewing">
+                                    <ul id="ctl00_ContentPlaceHolder1_dzRight_columnDisplay_ctl00_column" class="columnwidgetlist">
+                                        <li class="PBItem">
+                                            <div id="ctl00_ContentPlaceHolder1_dzRight_columnDisplay_ctl00_controlcolumn_ctl00_WidgetHost_dropcontainer"
+                                                class="widget">
+                                                <span id="ctl00_ContentPlaceHolder1_dzRight_columnDisplay_ctl00_controlcolumn_ctl00_WidgetHost_lblErrorMessage">
+                                                </span>
+                                                <div id="ctl00_ContentPlaceHolder1_dzRight_columnDisplay_ctl00_controlcolumn_ctl00_WidgetHost_updatepanel">
+                                                    <div id="ctl00_ContentPlaceHolder1_dzRight_columnDisplay_ctl00_controlcolumn_ctl00_WidgetHost_dvContent"
+                                                        class="content">
+                                                        <div id="ctl00_ContentPlaceHolder1_dzRight_columnDisplay_ctl00_controlcolumn_ctl00_WidgetHost_WidgetHost_widget_CB">
+                                                            <img title="Sightseeing" alt="Sightseeing" src="/uploadedImages/TrainingSite/TrainingSiteContent/Home/HomepageImages/Sightseeing.jpg?n=7532" /><img
+                                                                title="TopDestination" alt="TopDestination" src="/uploadedImages/TrainingSite/TrainingSiteContent/Home/HomepageImages/TopDestination.jpg?n=592" />
+                                                        </div>
+                                                        <span id="ctl00_ContentPlaceHolder1_dzRight_columnDisplay_ctl00_controlcolumn_ctl00_WidgetHost_WidgetHost_widget_errorLb">
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+             <!-- End Content Area -->
+        <footer>
+            <!-- Start Footer -->
+            <div class="container">
+                <div class="row">
+                    <div class="span8 ektron-huge-top-padding hidden-phone">
+                        <div class="ektron-resource-wrapper">
+                            <div class="ektron-resources copyright">
+                                <p>  © Ektron, Inc 2013. All rights reserved.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="span4 ektron-contact-column">
+                        <div class="ektron-large-padding ektron-724-med-padding">
+                            <div class="ektron-social-links">
+                                
+        <div class="ektron-social-link">
+            <a href='http://www.facebook.com/Ektron' title='Facebook' target="_blank">
+                <img src='/uploadedImages/TrainingSite/Images/Facebook.png' alt='Facebook'/>
+            </a>
+        </div>
+    
+        <div class="ektron-social-link">
+            <a href='http://twitter.com/Ektron' title='Twitter' target="_blank">
+                <img src='/uploadedImages/TrainingSite/Images/Twitter.png' alt='Twitter'/>
+            </a>
+        </div>
+    
+        <div class="ektron-social-link">
+            <a href='http://www.linkedin.com/company/163590' title='Linked In' target="_blank">
+                <img src='/uploadedImages/TrainingSite/Images/LinkedIn.png' alt='Linked In'/>
+            </a>
+        </div>
+    
+        <div class="ektron-social-link">
+            <a href='http://youtube.com/EktronTV' title='Youtube' target="_blank">
+                <img src='/uploadedImages/TrainingSite/Images/YouTube.png' alt='Youtube'/>
+            </a>
+        </div>
+    
+                            </div>
+                            <div class="ektron-footer-content"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Footer -->
+        </footer>
+    </div>
+    
+</body>
+</html>
